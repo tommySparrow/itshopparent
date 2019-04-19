@@ -7,7 +7,10 @@
   <groupId>com.it</groupId>
   <artifactId>it-shop-parent</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <modules>
+        <module>it-shop-eurekaserver</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
