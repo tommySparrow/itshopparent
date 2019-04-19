@@ -9,6 +9,8 @@
   <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>it-shop-eurekaserver</module>
+      <module>it-shop-api</module>
+        <module>it-shop-member</module>
     </modules>
     <packaging>pom</packaging>
 
