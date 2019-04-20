@@ -11,6 +11,7 @@
         <module>it-shop-eurekaserver</module>
       <module>it-shop-api</module>
         <module>it-shop-member</module>
+      <module>it-shop-common</module>
     </modules>
     <packaging>pom</packaging>
 

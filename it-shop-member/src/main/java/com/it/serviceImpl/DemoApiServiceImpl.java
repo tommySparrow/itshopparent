@@ -1,9 +1,9 @@
 package com.it.serviceImpl;
 
+import com.it.response.BaseApiService;
 import com.it.service.DemoApiService;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -13,13 +13,11 @@ import java.util.Map;
  * @ throws
  */
 @RestController
-public class DemoApiServiceImpl implements DemoApiService {
+public class DemoApiServiceImpl extends BaseApiService implements DemoApiService {
 
     @Override
     public Map<String, Object> demo() {
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("code",200);
-        map.put("msg","success");
-        return map;
+
+        return setResultSuccess();//成功返回
     }
 }
