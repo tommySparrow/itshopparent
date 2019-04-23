@@ -27,7 +27,18 @@ spring:
         # 使用druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
-
+##activemq连接信息
+  activemq:
+    broker-url: tcp://localhost:61616
+    in-memory: true
+    pool:
+      enabled: false
+#如果为True，则是Topic；如果是false或者默认，则是queue。
+  jms:
+    pub-sub-domain: false
+messages:
+  queue: mail_queue
+#集成mybatis
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml # mybatis配置文件所在路径
   type-aliases-package: com.it.entity  # 所有Entity别名类所在包
