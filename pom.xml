@@ -12,6 +12,7 @@
       <module>it-shop-api</module>
         <module>it-shop-member</module>
       <module>it-shop-common</module>
+        <module>it-shop-messages</module>
     </modules>
     <packaging>pom</packaging>
 
